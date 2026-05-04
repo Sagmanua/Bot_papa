@@ -8,7 +8,7 @@ from telebot import apihelper
 # PythonAnywhere proxy settings
 apihelper.proxy = {'https': 'http://proxy.server:3128'}
 
-TOKEN = '8340925625:AAFJcl_MmBtRoBitmJfUW_Bcz72Wymq-gm8'
+TOKEN = 'Your Token'
 bot = telebot.TeleBot(TOKEN)
 
 # Global state
