@@ -3,6 +3,10 @@ from telebot import types
 import json
 import os
 import glob
+from telebot import apihelper
+
+# PythonAnywhere proxy settings
+apihelper.proxy = {'https': 'http://proxy.server:3128'}
 
 TOKEN = '8340925625:AAFJcl_MmBtRoBitmJfUW_Bcz72Wymq-gm8'
 bot = telebot.TeleBot(TOKEN)
@@ -97,4 +101,4 @@ def search_handler(message):
 
 if __name__ == '__main__':
     print("Бот працює...")
-    bot.polling(none_stop=True)
+    bot.infinity_polling(timeout=10, long_polling_timeout=5)
