@@ -6,7 +6,7 @@ import glob
 from telebot import apihelper
 
 # PythonAnywhere proxy settings
-apihelper.proxy = {'https': 'http://proxy.server:3128'}
+# apihelper.proxy = {'https': 'http://proxy.server:3128'}
 
 TOKEN = 'Your Token'
 bot = telebot.TeleBot(TOKEN)
