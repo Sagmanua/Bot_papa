@@ -38,10 +38,10 @@ def parse_docx_with_colors(file_path):
     return data
 
 # Запуск
-parsed_data = parse_docx_with_colors('107.docx')
+parsed_data = parse_docx_with_colors('306.docx')
 
 # Збереження даних у файл JSON
-output_filename = 'data.json'
+output_filename = 'data_306.json'
 with open(output_filename, 'w', encoding='utf-8') as f:
     json.dump(parsed_data, f, indent=4, ensure_ascii=False)
 
